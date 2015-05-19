@@ -6,11 +6,17 @@
 	    			<h1>NEWS 1</h1>
 	    		</div>
 	    				<p>
-						   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-						   Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
-						   natoque penatibus et magnis dis parturient montes, nascetur 
-						   ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-						   pretium quis, sem. Nulla consequa
+						   <?php 
+								$sql = "SELECT * FROM article WHERE id = '1'";
+								$result = mysqli_query($link, $sql);
+
+									while($row = mysqli_fetch_array($result)){
+    							echo $row['title'];
+    							echo $row['intro'];
+    							echo $row['author'];
+
+								}
+							?>
 	    				</p>
 		</div>
 		
@@ -19,11 +25,17 @@
 					<h1>NEWS 2</h1>
 				</div>
 						<p>
-						   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-						   Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
-						   natoque penatibus et magnis dis parturient montes, nascetur 
-						   ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-						   pretium quis, sem. Nulla consequa
+						   <?php 
+								$sql = "SELECT * FROM article WHERE id = '2'";
+								$result = mysqli_query($link, $sql);
+
+									while($row = mysqli_fetch_array($result)){
+    							echo $row['title'];
+    							echo $row['intro'];
+    							echo $row['author'];
+
+								}
+							?>
 						<p>
 		</div>
 		
@@ -32,11 +44,18 @@
 				<h1>NEWS 3</h1>
 			</div>
 					<p>
-						   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-						   Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
-						   natoque penatibus et magnis dis parturient montes, nascetur 
-						   ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-						   pretium quis, sem. Nulla consequa				
+						   						   <?php 
+								$sql = "SELECT * FROM article WHERE id = '3'";
+								$result = mysqli_query($link, $sql);
+
+									while($row = mysqli_fetch_array($result)){
+    							echo $row['title'];
+    							echo $row['intro'];
+    							echo $row['image'];
+    							echo $row['author'];
+
+								}
+							?>				
 					</p>
 		</div>
 	</div>
