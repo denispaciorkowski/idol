@@ -20,11 +20,13 @@
 
 									while($row = mysqli_fetch_array($result)){
     							echo $row['intro'];
+    							echo '</br>';
     							echo $row['author'];
 
 								}
 							?>
 						</p>
+				<a href="article.php?id=<?=$row['id']?>">Lees meer</a>
 		</div>
 		
 		<div id="blok-2">
@@ -41,11 +43,12 @@
 					</h1>
 				</div>	<p>
 						   <?php 
-								$sql = "SELECT * FROM article WHERE id = '1'";
+								$sql = "SELECT * FROM article WHERE id = '2'";
 								$result = mysqli_query($link, $sql);
 
 									while($row = mysqli_fetch_array($result)){
     							echo $row['intro'];
+    							echo '</br>';
     							echo $row['author'];
 
 								}
@@ -68,11 +71,12 @@
 			</div>
 					<p>
 						   <?php 
-								$sql = "SELECT * FROM article WHERE id = '1'";
+								$sql = "SELECT * FROM article WHERE id = '3'";
 								$result = mysqli_query($link, $sql);
 
 									while($row = mysqli_fetch_array($result)){
     							echo $row['intro'];
+    							echo '</br>';
     							echo $row['author'];
 
 								}
