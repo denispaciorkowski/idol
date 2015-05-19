@@ -3,6 +3,10 @@
 		<img src="images/elroy_logo.png">
 	</div>
 
+	<div id="tekst_logo">
+		<img src="images/hoofdtekst.png">
+	</div>
+
 	<div id="menu">
 		<ul>
 			<li><a href="">Home</a></li>

@@ -1,4 +1,4 @@
-<content>
+<article>
     
     <div id="content-blok">
 	    <div id="blok-1">
@@ -41,4 +41,4 @@
 		</div>
 	</div>
 
-</content>
+</article>
