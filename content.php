@@ -44,7 +44,7 @@
 				<h1>NEWS 3</h1>
 			</div>
 					<p>
-						   						   <?php 
+						   	<?php 
 								$sql = "SELECT * FROM article WHERE id = '3'";
 								$result = mysqli_query($link, $sql);
 
