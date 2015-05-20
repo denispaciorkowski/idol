@@ -1,87 +1,41 @@
 <article>
     
     <div id="content-blok">
-	    <div id="blok-1">
-				<div id="blok-11">
-	    			<h1>
-						   <?php 
-								$sql = "SELECT * FROM article WHERE id = '1'";
-								$result = mysqli_query($link, $sql);
 
-									while($row = mysqli_fetch_array($result)){
-    							echo $row['title'];
-    						}
-    						?>	    				
-	    			</h1>
-	    		</div>	<p>
-						   <?php 
-								$sql = "SELECT * FROM article WHERE id = '1'";
-								$result = mysqli_query($link, $sql);
+	    				<?php
+						    date_default_timezone_set('Europe/London');
 
-									while($row = mysqli_fetch_array($result)){
-    							echo $row['intro'];
-    							echo '</br>';
-    							echo $row['author'];
+							$sql = "SELECT * FROM `article` ORDER BY `created` DESC LIMIT 0, 3";
+							$result = mysqli_query($link, $sql);
 
-								}
-							?>
-						</p>
-				<a href="article.php?id=<?=$row['id']?>">Lees meer</a>
-		</div>
-		
-		<div id="blok-2">
-				<div id="blok-22">
-					<h1>
-						   <?php 
-								$sql = "SELECT * FROM article WHERE id = '2'";
-								$result = mysqli_query($link, $sql);
+							while($row = mysqli_fetch_array($result))
+							{ 
+						?>
+								
+								<div id="blok">
+								<div id="blok-1">
+								
+									<?php 
+										echo "<h1>";
+										echo $row['title'];
+										echo "</h1>";
 
-									while($row = mysqli_fetch_array($result)){
-    							echo $row['title'];
-    						}
-    						?>							
-					</h1>
-				</div>	<p>
-						   <?php 
-								$sql = "SELECT * FROM article WHERE id = '2'";
-								$result = mysqli_query($link, $sql);
+  										echo "<p>";
+    									echo $row['intro'];
+    									
+										echo "</br>";
+    									echo "<a href=\"article.php?id=" . $row['id'] . "\">Lees meer</a>";
 
-									while($row = mysqli_fetch_array($result)){
-    							echo $row['intro'];
-    							echo '</br>';
-    							echo $row['author'];
 
-								}
-							?>
-						</p>
-		</div>
-		
-		<div id="blok-3">
-			<div id="blok-33">
-				<h1>
-						   <?php 
-								$sql = "SELECT * FROM article WHERE id = '3'";
-								$result = mysqli_query($link, $sql);
+    									echo "</p>";
 
-									while($row = mysqli_fetch_array($result)){
-    							echo $row['title'];
-    						}
-    						?>						
-				</h1>
-			</div>
-					<p>
-						   <?php 
-								$sql = "SELECT * FROM article WHERE id = '3'";
-								$result = mysqli_query($link, $sql);
+    									echo '</br>';
+    									echo $row['author'];
 
-									while($row = mysqli_fetch_array($result)){
-    							echo $row['intro'];
-    							echo '</br>';
-    							echo $row['author'];
-
-								}
-							?>		
-					</p>
-		</div>
+    								echo "</div>";
+    								echo "</div>";
+    									
+    								}
+									?>
 	</div>
 </article>
