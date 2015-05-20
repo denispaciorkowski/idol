@@ -23,4 +23,11 @@
 		<img src="images/facebook_button.png" width="30px" height="auto">
 		</a>
 	</div>
+
+	<div class="twitter">
+		<a href="https://twitter.com/elroyvrieling">
+		<img src="images/twitter_button.png" width="30px" height="auto">
+		</a>
+	</div>
+
 </header>
