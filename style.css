@@ -103,32 +103,15 @@ footer {
 	padding: 0 10px 0 10px;
 }
 
+#blok {
+	margin-bottom: 10px;
+	width: 30%;
+	height: 300px;
+	display: inline-block;
+}
+
+
 #blok-1 {
-	margin-bottom: 10px;
-	width: 30%;
-	height: 300px;
-	display: inline-block;
-}
-
-#blok-2 {
-	margin-bottom: 10px;
-	margin-left: 4.7%;
-	margin-right: 4.7%;
-	width: 30%;
-	height: 300px;
-	display: inline-block;
-	vertical-align: top;
-}
-
-#blok-3 {
-	width: 30%;
-	height: 300px;
-	display: inline-block;
-	margin-bottom: 10px;
-	vertical-align: top;
-}
-
-#blok-11 {
 	width: 100%;
 	height: 250px;
 	border: 1px solid black;
