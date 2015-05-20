@@ -7,7 +7,7 @@
 	</div>
 
 	<div id="footer_info">
-		<h1 id="contact_title">Aansprakelijkheids</h1>
+		<h1 id="contact_title">Aansprakelijkheid</h1>
 		<p id="contact_text">
 			Wij kunnen niet aansprakelijk worden gesteld
 			voor eventuele emotionele en of fysieke schade
