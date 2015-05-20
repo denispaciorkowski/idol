@@ -61,7 +61,7 @@ header {
 
 footer {
 	background-color: #d9d9d9;
-	height: 150px;
+	height: 200px;
 	width: 100%;
 	position: absolute;
 	bottom: 0px;
@@ -191,6 +191,12 @@ label {
 
 #logintitle {
 	background: none;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+#login_text {
 }
 
 #contact_title {
@@ -209,6 +215,12 @@ label {
 }
 
 #contactinformation {
-    width: 200px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#footer_info {
+    width: 300px;
     display: inline-block;
 }
