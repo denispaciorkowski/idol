@@ -1,11 +1,13 @@
 <header>
-	<div id="logo_header">
-		<img src="images/elroy_logo.png">
-	</div>
+	<a href="index.php">
+		<div id="logo_header">
+			<img src="images/elroy_logo.png">
+		</div>
 
-	<div id="tekst_logo">
-		<img src="images/hoofdtekst.png">
-	</div>
+		<div id="tekst_logo">
+			<img src="images/hoofdtekst.png">
+		</div>
+	</a>
 
 	<div id="menu">
 		<ul>
@@ -15,7 +17,7 @@
 			<li><a href="loginpage.php">Login</a></li>
 		</ul>
 	</div>
-	
+
 	<div class="facebook">
 		<a href="https://www.facebook.com/elroy.vrieling?fref=ts">
 		<img src="images/facebook_button.png" width="30px" height="auto">

@@ -26,7 +26,7 @@
 		} else {
 		?>
 	<div id="login_second_content">
-		<h1 id="logintitle">Vul je gegevens in om in te loggen</h1>
+		<h1 id="logintitle">Vul hier je gegevens in om in te loggen</h1>
 		<br>
 		<form action="loginpage.php" method="post">
 			<label for="wachtwoord">Wachtwoord</label>
