@@ -9,10 +9,10 @@
 
 	<div id="menu">
 		<ul>
-			<li><a href="">Home</a></li>
-			<li><a href="">Nieuws</a></li>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="newspage.php">Nieuws</a></li>
 			<li><a href="">Recensies</a></li>
-			<li><a href="">Contact</a></li>
+			<li><a href="contactpage.php">Contact</a></li>
 		</ul>
 	</div>
 	

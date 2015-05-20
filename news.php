@@ -1,0 +1,1 @@
+<h1> Dit is de nieuwspagina </h1>

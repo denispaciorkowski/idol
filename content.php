@@ -1,4 +1,4 @@
-<article>
+<content>
     
     <div id="content-blok">
 	    <div id="blok-1">
@@ -10,6 +10,7 @@
 
 									while($row = mysqli_fetch_array($result)){
     							echo $row['title'];
+
     						}
     						?>	    				
 	    			</h1>
@@ -84,4 +85,4 @@
 					</p>
 		</div>
 	</div>
-</article>
+</content>
