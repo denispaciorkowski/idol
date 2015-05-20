@@ -37,5 +37,10 @@
     									
     								}
 									?>
+
+
 	</div>
+    <p>
+	<a href="new_article.php">New Article</a>
+    <p>
 </article>
