@@ -5,7 +5,7 @@
 	    				<?php
 						    date_default_timezone_set('Europe/London');
 
-							$sql = "SELECT * FROM `article` ORDER BY `created`  DESC ";
+							$sql = "SELECT * FROM `article` ORDER BY `created`  DESC LIMIT 0,3 ";
 							$result = mysqli_query($link, $sql);
 
 							while($row = mysqli_fetch_array($result))
