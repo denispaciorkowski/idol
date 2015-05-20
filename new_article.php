@@ -11,10 +11,16 @@ require_once('database.php');
         intro='".$_POST['intro']."',
         image='".$_POST['image']."',
         youtube='".$_POST['youtube']."',
-        created='now()'
+        created=NOW()
         ";
-        echo $sql;
         mysqli_query($link, $sql);
+        echo "
+        <script>
+            window.onload = function(){
+                    document.location.href = 'index.php';
+            };
+        </script>
+        ";
     }
 
 ?>
