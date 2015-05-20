@@ -30,4 +30,11 @@
 		</a>
 	</div>
 
+	<div class="instagram">
+		<a href="https://instagram.com/elroyvrieling/">
+		<img src="images/instagram_button.png" width="30px" height="auto">
+		</a>
+	</div>
+
+
 </header>

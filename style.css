@@ -170,6 +170,12 @@ footer {
     top: 15px;
 }
 
+.instagram {
+    position: absolute;
+    right: 130px;
+    top: 10px;
+}
+
 #contact_h1 {
 	background-color: none;
 }
