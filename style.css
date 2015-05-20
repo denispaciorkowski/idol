@@ -109,7 +109,16 @@ footer {
 	height: 300px;
 	display: inline-block;
     vertical-align: top;
-    margin-right: 2.5%;
+    margin-right: 4.65%;
+}
+
+#blok:last-child {
+    margin-bottom: 10px;
+    width: 30%;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0;
 }
 
 
