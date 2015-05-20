@@ -56,7 +56,8 @@ ul {
 
 header {
 	height: 213px;
-	border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
+    background: -webkit-linear-gradient(left top, #FFF, #93afb2); /* For Safari 5.1 to 6.0 */
 }
 
 footer {
@@ -76,8 +77,8 @@ footer {
 }
 
 #menu ul li a:hover {
-	color: #dea8a8;
-	-webkit-transition: .2s;
+	color: #3b6367;
+	-webkit-transition: .1s;
 }
 
 #menu ul li {
