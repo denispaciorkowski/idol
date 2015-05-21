@@ -9,7 +9,7 @@
          url('fonts/roboto_thin_regular/roboto-thin-webfont.svg#robotothin') format('svg');
     font-weight: 700;
     font-style: normal;
-
+    
 }
 
 @font-face {
@@ -25,6 +25,22 @@
 
 }
 
+@font-face {
+    font-family: 'robotomedium';
+    src: url('fonts/roboto_medium_regular/roboto-medium-webfont.eot');
+    src: url('fonts/roboto_medium_regular/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto_medium_regular/roboto-medium-webfont.woff2') format('woff2'),
+         url('fonts/roboto_medium_regular/roboto-medium-webfont.woff') format('woff'),
+         url('fonts/roboto_medium_regular/roboto-medium-webfont.ttf') format('truetype'),
+         url('fonts/roboto_medium_regular/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+
 
 /* MAIN CSS */
 p {
@@ -39,7 +55,7 @@ body {
 
 h1 {
 	font-size: 25px;
-	background-color: #d9d9d9;
+	background-color: #618184;
   	margin: 0;
   	padding: 10px;
   	font-family: 'robotoblack';
@@ -68,6 +84,32 @@ footer {
 	bottom: 0px;
 }
 
+input[type="submit"] {
+	width: 100px;
+	font-size: 20px;
+	margin-top: 20px;
+	font-family: 'robotothin';
+	background-color: #81d15a;
+	left: 1100px;
+	position: absolute;
+    text-transform: uppercase;
+}
+
+input[type="password"] {
+	height: 35px;
+	width: 500px;
+	margin-left: 20px;
+}
+
+label {
+	font-family: 'robotothin';
+	font-size: 30px;
+}
+
+
+
+
+/* HEADER CSS */
 #menu {
 }
 
@@ -96,41 +138,6 @@ footer {
 	right: 0;
 	top: 158px;
 	margin-right: 40px;
-}
-
-
-#content-blok {
-	margin-top:45px;
-	padding: 0 10px 0 10px;
-}
-
-#blok {
-	margin-bottom: 10px;
-	width: 30%;
-	height: 300px;
-	display: inline-block;
-    vertical-align: top;
-    margin-right: 4.65%;
-}
-
-#blok:last-child {
-    margin-bottom: 10px;
-    width: 30%;
-    height: 300px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 0;
-}
-
-
-#blok-1 {
-	width: 100%;
-	height: 250px;
-	border: 1px solid black;
-	box-shadow: black;
-	-webkit-box-shadow: 6px 0px 33px 0px rgba(0,0,0,0.33);
-	-moz-box-shadow: 6px 0px 33px 0px rgba(0,0,0,0.33);
-	box-shadow: 6px 0px 33px 0px rgba(0,0,0,0.33);
 }
 
 #logo_header {
@@ -176,30 +183,55 @@ footer {
     top: 10px;
 }
 
-#contact_h1 {
-	background-color: none;
-}
 
-input[type="submit"] {
-	width: 100px;
-	font-size: 20px;
-	margin-top: 20px;
-	font-family: 'robotothin';
-	background-color: #81d15a;
-	left: 1100px;
-	position: absolute;
+
+
+
+/* CONTENT CSS */
+#news_title {
     text-transform: uppercase;
 }
 
-input[type="password"] {
-	height: 35px;
-	width: 500px;
-	margin-left: 20px;
+#content-blok {
+	margin-top:45px;
+	padding: 0 10px 0 10px;
 }
 
-label {
-	font-family: 'robotothin';
-	font-size: 30px;
+#blok {
+	margin-bottom: 10px;
+	width: 30%;
+	height: 300px;
+	display: inline-block;
+    vertical-align: top;
+    margin-right: 4.65%;
+}
+
+#blok:last-child {
+    margin-bottom: 10px;
+    width: 30%;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0;
+}
+
+
+#blok-1 {
+	width: 100%;
+	height: 300px;
+	box-shadow: black;
+	-webkit-box-shadow: 6px 0px 33px 0px rgba(0,0,0,0.33);
+	-moz-box-shadow: 6px 0px 33px 0px rgba(0,0,0,0.33);
+	box-shadow: 6px 0px 33px 0px rgba(0,0,0,0.33);
+}
+
+#blok-1 h1 {
+    color: white;
+    font-family: 'robotomedium';
+}
+
+#contact_h1 {
+	background-color: none;
 }
 
 #login_content {
@@ -221,6 +253,15 @@ label {
 #login_text {
 }
 
+#readmore_button a{
+    background-color: #81d15a;
+    height: 20px;
+    width: 50px;
+}
+
+
+
+/* FOOTER CSS */
 #contact_title {
     padding-bottom: 0;
     background: none;
@@ -229,12 +270,6 @@ label {
 #contact_text {
     margin: 0;
     padding-left: 10px;
-}
-
-#readmore_button a{
-    background-color: #81d15a;
-    height: 20px;
-    width: 50px;
 }
 
 #contactinformation {
