@@ -85,7 +85,7 @@ footer {
 }
 
 input[type="submit"] {
-	width: 100px;
+	width: auto;
 	font-size: 20px;
 	margin-top: 20px;
 	font-family: 'robotothin';
