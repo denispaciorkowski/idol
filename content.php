@@ -1,5 +1,5 @@
 <article>
-    
+
     <div id="content-blok">
 
 	    <?php
@@ -9,20 +9,20 @@
 				$result = mysqli_query($link, $sql);
 
 					while($row = mysqli_fetch_array($result))
-						{ 
+						{
 		?>
-								
+
 		<div id="blok">
 		<div id="blok-1">
-								
-			<?php 
-			    echo "<h1>";
+
+			<?php
+			    echo "<h1 id='news_title'>";
 			    echo $row['title'];
 				echo "</h1>";
 
   				echo "<p>";
     		    echo $row['intro'];
-    									
+
 				echo "</br>";
     			echo "<a href=\"article.php?id=" . $row['id'] . "\">Lees meer</a>";
 
@@ -34,7 +34,7 @@
 
     	echo "</div>";
     	echo "</div>";
-    									
+
     		  }
 			?>
 

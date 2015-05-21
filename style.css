@@ -39,7 +39,7 @@ body {
 
 h1 {
 	font-size: 25px;
-	background-color: #d9d9d9;
+	background-color: #618184;
   	margin: 0;
   	padding: 10px;
   	font-family: 'robotoblack';
@@ -98,6 +98,9 @@ footer {
 	margin-right: 40px;
 }
 
+#news_title {
+    text-transform: uppercase;
+}
 
 #content-blok {
 	margin-top:45px;
@@ -125,12 +128,15 @@ footer {
 
 #blok-1 {
 	width: 100%;
-	height: 250px;
-	border: 1px solid black;
+	height: 300px;
 	box-shadow: black;
 	-webkit-box-shadow: 6px 0px 33px 0px rgba(0,0,0,0.33);
 	-moz-box-shadow: 6px 0px 33px 0px rgba(0,0,0,0.33);
 	box-shadow: 6px 0px 33px 0px rgba(0,0,0,0.33);
+}
+
+#blok-1 h1 {
+    color: white;
 }
 
 #logo_header {
