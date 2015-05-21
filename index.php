@@ -10,6 +10,7 @@ ini_set('display_errors', 1);
 	<meta charset="UTF-8">
 	<title>Elroy Fanpage</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
 </head>
 <body>
 	<?php
