@@ -1,3 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Elroys Fanpage</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+</body>
+</html>
+
+
 <header>
 	<a href="index.php">
 		<div id="logo_header">
