@@ -32,7 +32,9 @@
 			bij hogerbevoegden.</p>
 		<br>
 		<form action="loginpage.php" method="post">
-			<label for="wachtwoord">Wachtwoord</label>
+			<label for="email">Gebruikersnaam:</label>
+			<input type="text" name="email">
+			<label for="wachtwoord">Wachtwoord:</label>
 			<input type="password" name="wachtwoord"><br>
 			<input type="submit" value="log in">
 		</form>
