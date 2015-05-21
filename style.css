@@ -282,7 +282,7 @@ label {
 
 /* RESPONSIVE DESIGN */
 
-@media screen (max-device-width: 780px) {
+@media screen and (max-device-width: 850px) {
 
 #blok {
     margin-bottom: 10px;

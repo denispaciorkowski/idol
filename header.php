@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 	<title>Elroys Fanpage</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
