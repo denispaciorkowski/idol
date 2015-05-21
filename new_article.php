@@ -31,17 +31,16 @@ require_once('database.php');
     Titel: <br>
 	<input type="text" name="title" /><br>
     Tekst: <br>
-	<input type="text" name="content" /><br>
+    <textarea name="content" ></textarea>
+    <br>
     Auteur: <br>
     <input type="text" name="author" /><br>
     Intro:<br>
     <input type="text" name="intro" /><br>
     Image:<br>
-    <input type="text" name="author" /><br>
+    <input type="text" name="image" /><br>
     Youtube:<br>
     <input type="text" name="youtube" /><br>
-    Twitter:<br>
-    <input type="text" name="twitter" /><br>
     <br>
     <input type="submit" name="addArticle" value="save" />
 </form>

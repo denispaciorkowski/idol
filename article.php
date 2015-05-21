@@ -1,11 +1,39 @@
+
+
 <?php
     require_once ("header.php");
 
     $id = $_GET["id"];
 
-    echo "<h1>";
-    echo $row["title"];
-    echo "</h1>";
+    $sql = "SELECT * from article WHERE id = $id";
+    $result = mysqli_query($link, $sql);
+    while($row = mysqli_fetch_array($result)){
+        echo "<h1>";
+        echo $row['title'];
+        echo "</h1>";
+
+        echo $row['image'];
+
+        echo "<p>";
+        echo $row['content'];
+        echo "</br></br>";
+
+        echo "Youtube link: ";
+        echo $row['youtube'];
+        echo "</br></br>";
+
+        echo "Auteur: ";
+        echo $row['author'];
+        echo "</br>";
+        echo "Gepubliceerd op: ";
+        echo $row['created'];
+        echo "</p>";
+
+    }
+                    
+
+
+    
 
     require_once('footer.php');
     ?>

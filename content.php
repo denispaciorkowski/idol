@@ -30,7 +30,7 @@
     			echo "</p>";
 
     			echo '</br>';
-    			echo $row['author'];
+    			echo $row['image'];
 
     	echo "</div>";
     	echo "</div>";
