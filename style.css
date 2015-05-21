@@ -9,7 +9,7 @@
          url('fonts/roboto_thin_regular/roboto-thin-webfont.svg#robotothin') format('svg');
     font-weight: 700;
     font-style: normal;
-    
+
 }
 
 @font-face {
@@ -90,20 +90,21 @@ input[type="submit"] {
 	margin-top: 20px;
 	font-family: 'robotothin';
 	background-color: #81d15a;
-	left: 1100px;
+	left: 940px;
 	position: absolute;
     text-transform: uppercase;
 }
 
-input[type="password"] {
+input[type="password"], input[type ="text"] {
 	height: 35px;
 	width: 500px;
-	margin-left: 20px;
+	margin-left: 30px;
 }
 
 label {
 	font-family: 'robotothin';
 	font-size: 30px;
+    margin-left: 30px;
 }
 
 
