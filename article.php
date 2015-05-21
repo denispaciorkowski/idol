@@ -32,7 +32,9 @@
     }
      
 
-echo "<a href='delete_article.php?id=$id'>Delete Article</a>"
+echo "<a href='delete_article.php?id=$id'>Delete Article</a>";
+echo "</br></br>";
+echo "<a href='edit_article.php?id=$id'>Edit Article</a>";
     
 ?>
 

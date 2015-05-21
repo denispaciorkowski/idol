@@ -1,32 +1,33 @@
-
-
 <?php
-require_once('header.php');
 
-    if(isset($_POST['addArticle'])){
-        $sql = "INSERT INTO article SET 
+    require_once("header.php");
+
+    $id = $_GET['id'];    
+    if(isset($_POST['editArticle'])){
+    $sql = "UPDATE article SET  
         title='".$_POST['title']."',
         content='".$_POST['content']."',
         author='".$_POST['author']."',
         intro='".$_POST['intro']."',
         image='".$_POST['image']."',
         youtube='".$_POST['youtube']."',
-        created=NOW()
-        ";
+        created=NOW(),
+        WHERE id = $id";
         mysqli_query($link, $sql);
-        echo "
-        <script>
-            window.onload = function(){
-                    document.location.href = 'index.php';
-            };
-        </script>
-        ";
+        $row = mysqli_fetch_array($sql);
     }
+    $sql = "SELECT * FROM article WHERE id=$id"; 
+    mysqli_query($link, $sql);
+    $row = mysqli_fetch_array($sql);
+
 
 ?>
-    <form action="new_article.php" method="POST">
+
+UPDATE article SET title = 'jan', content = 'd dsadasd' where id = $id
+
+<form action="editArticle.php?id=<?php echo $row['id']; ?>" method="POST">
     Titel: <br>
-    <input type="text" name="title" /><br>
+    <input type="text" name="title" value="<?php echo $row['title'];  ?>" /><br>
     Tekst: <br>
     <textarea name="content" ></textarea>
     <br>
@@ -39,10 +40,11 @@ require_once('header.php');
     Youtube:<br>
     <input type="text" name="youtube" /><br>
     <br>
-    <input type="submit" name="addArticle" value="save" />
+    <input type="submit" name="editArticle" value="save" />
 </form>
+
+
 
 <?php
     require_once("footer.php")
 ?>
-
