@@ -19,19 +19,19 @@
 	</div>
 
 	<div class="facebook">
-		<a href="https://www.facebook.com/elroy.vrieling?fref=ts">
+		<a href="https://www.facebook.com/elroy.vrieling?fref=ts" target="_blank">
 		<img src="images/facebook_button.png" width="30px" height="auto">
 		</a>
 	</div>
 
 	<div class="twitter">
-		<a href="https://twitter.com/elroyvrieling">
+		<a href="https://twitter.com/elroyvrieling" target="_blank">
 		<img src="images/twitter_button.png" width="30px" height="auto">
 		</a>
 	</div>
 
 	<div class="instagram">
-		<a href="https://instagram.com/elroyvrieling/">
+		<a href="https://instagram.com/elroyvrieling/" target="_blank">
 		<img src="images/instagram_button.png" width="30px" height="auto">
 		</a>
 	</div>

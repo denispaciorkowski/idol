@@ -61,7 +61,7 @@ header {
 }
 
 footer {
-	background-color: #d9d9d9;
+	background-color: #93afb2;
 	height: 200px;
 	width: 100%;
 	position: absolute;
@@ -223,6 +223,7 @@ label {
 
 #contact_title {
     padding-bottom: 0;
+    background: none;
 }
 
 #contact_text {
