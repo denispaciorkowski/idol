@@ -30,10 +30,12 @@
         echo "</p>";
 
     }
-                    
+     
 
-
+echo "<a href='delete_article.php?id=$id'>Delete Article</a>"
     
+?>
 
+<?php
     require_once('footer.php');
-    ?>
+?>
