@@ -80,7 +80,7 @@ footer {
 	background-color: #93afb2;
 	height: 200px;
 	width: 100%;
-	position: absolute;
+	position: relative;
 	bottom: 0px;
 }
 
@@ -193,6 +193,7 @@ label {
 #content-blok {
 	margin-top:45px;
 	padding: 0 10px 0 10px;
+    min-height: 500px;
 }
 
 #blok {
@@ -226,6 +227,12 @@ label {
 #blok-1 h1 {
     color: white;
     font-family: 'robotomedium';
+}
+
+#article_img {
+    display: inline-block;
+    width:20%;
+    height: auto;
 }
 
 #contact_h1 {
