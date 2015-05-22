@@ -2,7 +2,11 @@
 
 <?php
     require_once ("header.php");
+?>
 
+<div id="article_center>
+
+<?php
     $id = $_GET["id"];
 
     $sql = "SELECT * from article WHERE id = $id";
@@ -32,33 +36,15 @@
 
     }
 
-    <?php
 
-    if ($_POST) {
-        $username = $_POST['username'];
-        $password = $_POST['password'];
+echo "<a href='delete_article.php?id=$id'>Delete Article</a>";
+echo "</br></br>";
+//echo "<a href='edit_article.php?id=$id'>Edit Article</a>";
 
-        $query = "SELECT * FROM user
-                WHERE username = '$username'
-                AND password = '$password'";
-
-        $result = mysqli_query($link, $query);
-        $user = mysqli_fetch_array($result);
-
-        if ($user) {
-            $_SESSION['username']= $username;
-        }
-    }
-
-    if (!isset($_SESSION['username'])) {
-        echo " ";
-    } else {
-        echo "<a href='delete_article.php?id=$id'>Delete Article</a>";
-        echo "</br></br>";
-    }
-
-    ?>
+?>
 
 <?php
     require_once('footer.php');
 ?>
+
+</div>
