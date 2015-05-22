@@ -29,21 +29,46 @@
 
     			echo "</p>";
 
-    			echo '</br>'; 
+    			echo '</br>';
         ?>
                 <img src=" <?php echo $row['image'];?> " />
-        <?php 
+        <?php
 
     	echo "</div>";
     	echo "</div>";
-        
+
     		  }
 		?>
 
 
 	</div>
 
-    <p>
-	   <a href="new_article.php">New Article</a>
-    <p>
+    <?php
+
+    if ($_POST) {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        $query = "SELECT * FROM user
+                WHERE username = '$username'
+                AND password = '$password'";
+
+        $result = mysqli_query($link, $query);
+        $user = mysqli_fetch_array($result);
+
+        if ($user) {
+            $_SESSION['username']= $username;
+        }
+    }
+
+    if (!isset($_SESSION['username'])) {
+        echo " ";
+    } else {
+        echo "    <p>
+        	   <a href='new_article.php'>New Article</a>
+            <p>";
+    }
+
+    ?>
+
 </article>
