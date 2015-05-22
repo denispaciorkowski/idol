@@ -255,13 +255,13 @@ label {
     background-color: #81d15a;
     height: 20px;
     width: 50px;
-    border: 1px solid black;
     padding: 5px;
     top: 150px;
     position: relative;
     left: 380px;
     text-decoration: none;
     color: black;
+    box-shadow: 1px black;
 }
 
 
