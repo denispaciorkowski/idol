@@ -107,6 +107,7 @@ label {
     margin-left: 30px;
 }
 
+
 /* HEADER CSS */
 #menu {
 }
@@ -250,10 +251,17 @@ label {
 #login_text {
 }
 
-#readmore_button a{
+#readmore{
     background-color: #81d15a;
     height: 20px;
     width: 50px;
+    border: 1px solid black;
+    padding: 5px;
+    top: 150px;
+    position: relative;
+    left: 380px;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -282,7 +290,7 @@ label {
 
 /* RESPONSIVE DESIGN */
 
-@media screen and (max-device-width: 850px) {
+@media screen and (max-width: 300px) {
 
 #blok {
     margin-bottom: 10px;
