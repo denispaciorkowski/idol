@@ -29,14 +29,16 @@
 
     			echo "</p>";
 
-    			echo '</br>';
-    			echo $row['image'];
+    			echo '</br>'; 
+        ?>
+                <img src=" <?php echo $row['image'];?> " />
+        <?php 
 
     	echo "</div>";
     	echo "</div>";
-
+        
     		  }
-			?>
+		?>
 
 
 	</div>

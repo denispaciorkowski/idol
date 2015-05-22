@@ -23,7 +23,7 @@
 
 ?>
 
-UPDATE article SET title = 'jan', content = 'd dsadasd' where id = $id
+
 
 <form action="editArticle.php?id=<?php echo $row['id']; ?>" method="POST">
     Titel: <br>

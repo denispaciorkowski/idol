@@ -11,9 +11,10 @@
         echo "<h1>";
         echo $row['title'];
         echo "</h1>";
+?>
 
-        echo $row['image'];
-
+        <img src=" <?php echo $row['image'];?> " />
+<?php
         echo "<p>";
         echo $row['content'];
         echo "</br></br>";
@@ -34,7 +35,7 @@
 
 echo "<a href='delete_article.php?id=$id'>Delete Article</a>";
 echo "</br></br>";
-echo "<a href='edit_article.php?id=$id'>Edit Article</a>";
+//echo "<a href='edit_article.php?id=$id'>Edit Article</a>";
     
 ?>
 
