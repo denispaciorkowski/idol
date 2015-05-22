@@ -1,4 +1,4 @@
-<div id="login_content">
+<div id="article_center">
 	<?php
 
 		if ($_POST) {

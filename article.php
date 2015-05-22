@@ -4,7 +4,7 @@
     require_once ("header.php");
 ?>
 
-<div id="article_center>
+<div id="article_center">
 
 <?php
     $id = $_GET["id"];
@@ -42,9 +42,7 @@ echo "</br></br>";
 //echo "<a href='edit_article.php?id=$id'>Edit Article</a>";
 
 ?>
-
+</div>
 <?php
     require_once('footer.php');
 ?>
-
-</div>
