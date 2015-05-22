@@ -1,5 +1,6 @@
 <?php
 	require_once ("database.php")
+
 ?>
 
 
@@ -9,7 +10,7 @@
 	<meta charset="UTF-8">
 	<title>Elroys Fanpage</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
 <body>
 
@@ -33,7 +34,31 @@
 			<li><a href="index.php">Home</a></li>
 			<li><a href="newspage.php">Nieuws</a></li>
 			<li><a href="">Recensies</a></li>
-			<li><a href="loginpage.php">Login</a></li>
+			<?php
+
+			if ($_POST) {
+				$username = $_POST['username'];
+				$password = $_POST['password'];
+
+				$query = "SELECT * FROM user
+						WHERE username = '$username'
+						AND password = '$password'";
+
+				$result = mysqli_query($link, $query);
+				$user = mysqli_fetch_array($result);
+
+				if ($user) {
+					$_SESSION['username']= $username;
+				}
+			}
+
+			if (!isset($_SESSION['username'])) {
+				echo "<li><a href='loginpage.php'>Login</a></li>";
+			} else {
+				echo "<li><a href='loggout.php'>Logout</a></li>";
+			}
+
+			?>
 		</ul>
 	</div>
 

@@ -24,7 +24,7 @@
     		    echo $row['intro'];
 
 				echo "</br>";
-    			echo "<a href=\"article.php?id=" . $row['id'] . "\">Lees meer</a>";
+    			echo "<a id='readmore' href=\"article.php?id=" . $row['id'] . "\">Lees meer</a>";
 
 
     			echo "</p>";
@@ -42,7 +42,7 @@
 
 
 	</div>
-    
+
     <p>
 	   <a href="new_article.php">New Article</a>
     <p>
