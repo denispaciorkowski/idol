@@ -17,7 +17,7 @@
         echo "</h1>";
 ?>
 
-        <img src=" <?php echo $row['image'];?> " />
+        <img id="article_img" src=" <?php echo $row['image'];?> " />
 <?php
         echo "<p>";
         echo $row['content'];

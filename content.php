@@ -30,15 +30,13 @@
     			echo "</p>";
 
     			echo '</br>';
-        ?>
-                <img src=" <?php echo $row['image'];?> " />
-        <?php
+
 
     	echo "</div>";
     	echo "</div>";
 
     		  }
-		?>
+		   ?>
 
 
 	</div>
